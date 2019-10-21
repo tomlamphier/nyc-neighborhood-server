@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.datasciex</groupId>
-    <artifactId>rest311a</artifactId>
+    <artifactId>nyc-neighborhood-server</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>rest311a</name>
+    <name>nyc-neighborhood-server</name>
     <description>Rest backend for 311 data</description>
 
     <parent>
