@@ -14,7 +14,7 @@ public class BoroughsController {
     @Autowired
     BoroughsRepository boroughsRepository;
 
-    @CrossOrigin(origins = "http://localhost")
+    @CrossOrigin
     @GetMapping("/boroughs")
     public List<Boroughs> getBoroughs() {
         return boroughsRepository.findAll();

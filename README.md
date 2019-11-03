@@ -11,7 +11,7 @@
   2. Vue front end (github repo nyc-neighborhood-client)
   3. Spring Boot server (this github repo)
   
-  The URL for the live app is
+  The URL for the live app is [datasciex.com/nyc-neighborhood](datasciex.com/nyc-neighborhood). 
   
   ## Software Requirements
   
@@ -40,3 +40,15 @@
   | /boroughs      | get geo polygons for boundaries of the boroughs |
   | /nhoodgeo      | post list of neighborhoods get back their geo polygons. |
   | /choropleth    | post list of neighborhoods and list of complaints, get back a ranking of neighborhoods.|
+  
+  ## Deploying to a Remote Server
+  
+  1.  Upload the jar file /target/nyc-neighborhood-server-1.0.jar to the remote host.
+  
+  2.  Create script with the following:
+  >```
+  >java -jar target/nyc-neighborhood-server-1.0.jar
+  >```
+
+  3.  Make script run at startup.  Including it
+  in /etc/rc.d/local.rc works on Linux.  

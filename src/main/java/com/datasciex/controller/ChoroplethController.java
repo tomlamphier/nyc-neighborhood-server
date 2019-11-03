@@ -21,7 +21,7 @@ public class ChoroplethController {
     @Autowired
     NhoodBoundsRepository nhoodBoundsRepository;
 
-    @CrossOrigin(origins = "http://localhost")
+    @CrossOrigin
     @PostMapping("/choropleth")
     public ChoroplethQueryRes choro(@RequestBody ChoroplethQuery choroplethQuery) {
         Map<String, Long> nhscores = new HashMap<String, Long>();

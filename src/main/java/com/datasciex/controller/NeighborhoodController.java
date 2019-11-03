@@ -14,7 +14,7 @@ public class NeighborhoodController {
     @Autowired
     NeighborhoodRepository neighborhoodRepository;
 
-    @CrossOrigin(origins = "http://localhost")
+    @CrossOrigin
     @GetMapping("/neighborhoods")
     public List<Neighborhood> getNeighborhoods() {
         return neighborhoodRepository.findAllByOrderByNeighborhood();

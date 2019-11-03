@@ -14,7 +14,7 @@ public class ComplaintController {
     @Autowired
     ComplaintRepository complaintRepository;
 
-    @CrossOrigin(origins = "http://localhost")
+    @CrossOrigin
     @GetMapping("/complaints")
     public List<Complaint> getComplaints() {
         return complaintRepository.findAllByOrderByType();

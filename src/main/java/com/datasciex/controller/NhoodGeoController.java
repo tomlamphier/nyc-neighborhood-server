@@ -19,7 +19,7 @@ public class NhoodGeoController {
     @Autowired
     NhoodBoundsRepository nhoodBoundsRepository;
 
-    @CrossOrigin(origins = "http://localhost")
+    @CrossOrigin
     @PostMapping("/nhoodgeo")
     public NeighborhoodQueryRes nhgeos(@RequestBody NeighborhoodQuery neighborhoodQuery) {
         ArrayList<NhoodGeo> nhs = new ArrayList<NhoodGeo>();
